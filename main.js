@@ -23,3 +23,13 @@ function removeLastLi() {
 }
 removeLastLi();
 
+function addArgument(element) {
+    const arguments = document.querySelector('ul#arguments')
+    arguments.appendChild(element);
+}
+
+const newImage = document.createElement('img');
+newImage.src = 'https://www.thoughtco.com/thmb/x6rKrEfzJsiP-wHxgfCEvAwLg4E=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/Irritator-58d292465f9b581d72de1f9c.jpg';
+newImage.style.height = '60px';
+
+addArgument(newImage);
