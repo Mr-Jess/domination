@@ -61,3 +61,12 @@ function changeFontSize(element, fontSize) {
 }
 const thing2 = document.querySelector('#thing-2')
 changeFontSize(thing2, '5px')
+
+//9
+function makeToDo(toDoText) {
+    const newToDo = document.createElement('li');
+    newToDo.innerText = toDoText;
+    return newToDo;
+}
+const newToDo = makeToDo('hello');
+addToArgumentsList(newToDo);
