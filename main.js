@@ -77,3 +77,5 @@ function makeHeader(text, size) {
     header.innerText = text;
     return header;
 }
+const header = makeHeader('I am a header, 2);
+addToArgumentsList(header);
