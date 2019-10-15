@@ -8,7 +8,16 @@ addImagineUrl('#image-2', 'https://dw8stlw9qt0iz.cloudfront.net/G7E0aSNJuMsOodsc
 addImagineUrl('#image-3', 'https://www.thoughtco.com/thmb/x6rKrEfzJsiP-wHxgfCEvAwLg4E=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/Irritator-58d292465f9b581d72de1f9c.jpg')
 
 function strikeThroughFirstItem() {
-    const firstItem = document.querySelector('ul#arguments > li;first-child');
+    const firstItem = document.querySelector('ul#arguments > li:first-child');
     firstItem.style.textDecoration = 'line-through';
 }
+strikeThroughFirstItem()
+
+function removeLastLi() {
+    const lastLi = document.querySelector('ul > li:last-child');
+    lastLi.remove();
+    // const argumentsList = document.querySelector('ul#arguments')
+    // const lastLi = argumentsList.lastElementChild;
+}
+removeLastLi();
 
