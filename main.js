@@ -24,6 +24,7 @@ function removeLastLi() {
 removeLastLi();
 
 function addArgument(element) {
+    //Quicker way = document.querySelector('ul#arguments')
     const arguments = document.querySelector('ul#arguments')
     arguments.appendChild(element);
 }
@@ -33,3 +34,10 @@ newImage.src = 'https://www.thoughtco.com/thmb/x6rKrEfzJsiP-wHxgfCEvAwLg4E=/768x
 newImage.style.height = '60px';
 
 addArgument(newImage);
+
+function makeSmall(image) {
+    image.style.height = '30px'
+}
+
+const image1 = document.querySelector('#image-1')
+makeSmall(image1)
