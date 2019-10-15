@@ -70,3 +70,10 @@ function makeToDo(toDoText) {
 }
 const newToDo = makeToDo('hello');
 addToArgumentsList(newToDo);
+
+//10
+function makeHeader(text, size) {
+    const header = document.createElement('h' + size.toString);
+    header.innerText = text;
+    return header;
+}
