@@ -16,8 +16,10 @@ strikeThroughFirstItem()
 function removeLastLi() {
     const lastLi = document.querySelector('ul > li:last-child');
     lastLi.remove();
-    // const argumentsList = document.querySelector('ul#arguments')
-    // const lastLi = argumentsList.lastElementChild;
+    //BELOW EXAMPLES OF OTHER WAYS TO WRITE THIS EXERCISE;
+    //const argumentsList = document.querySelector('ul#arguments').lastElementChild.childElementCount.toString();
+    //const lastLi = argumentsList.lastElementChild;
+    //const lastLi = Document.querySelector('ul#arguments');
 }
 removeLastLi();
 
